@@ -227,8 +227,7 @@ function loadStudentsPage() {
           if (searchMatch && keyword.length > 0) {
             highlightElementText(nameElement, keyword, true);
           } else {
-            const clean = nameElement.innerHTML.replace(/<\/?mark>/gi, "");
-            nameElement.innerHTML = clean;
+            removeAllHighlights(pub);
           }
         });
       }
@@ -313,7 +312,7 @@ function loadPublicationsPage() {
             if (matchSearch && keyword.length > 0) {
               highlightElementText(pub, keyword);
             } else {
-              pub.innerHTML = pub.innerHTML.replace(/<\/?mark>/gi, "");
+              removeAllHighlights(pub);
             }
           });
 
@@ -364,18 +363,25 @@ function setupFilterButtons(buttons, onFilter) {
 }
 
 // Highlight matching keyword in element text
-function highlightElementText(element, keyword, isLink = false) {
-  if (!element) return;
-  const regex = new RegExp(`(${keyword})`, "gi");
-  const cleanHTML = element.innerHTML.replace(/<\/?mark>/gi, "");
+function highlightElementText(element, keyword) {
+  if (!element || !keyword) return;
 
-  if (isLink && element.querySelector("a")) {
-    const link = element.querySelector("a");
-    const cleanText = link.textContent;
-    link.innerHTML = cleanText.replace(regex, "<mark>$1</mark>");
-  } else {
-    element.innerHTML = cleanHTML.replace(regex, "<mark>$1</mark>");
-  }
+  const regex = new RegExp(`(${keyword})`, "gi");
+
+  const walk = (node) => {
+    if (node.nodeType === 3) { // Text node
+      const match = node.nodeValue.match(regex);
+      if (match) {
+        const span = document.createElement("span");
+        span.innerHTML = node.nodeValue.replace(regex, "<mark>$1</mark>");
+        node.replaceWith(...span.childNodes);
+      }
+    } else if (node.nodeType === 1 && node.nodeName !== "MARK") {
+      Array.from(node.childNodes).forEach(child => walk(child));
+    }
+  };
+
+  walk(element);
 }
 
 // Dynamically load/unload the Three.js DNA animation based on the page
@@ -416,4 +422,14 @@ function handleFooter(page) {
   } else {
     footer.style.display = "block"; // Show footer on other pages
   }
+}
+
+// Remove <mark> element
+function removeAllHighlights(element) {
+  const marks = element.querySelectorAll('mark');
+  marks.forEach(mark => {
+    const parent = mark.parentNode;
+    while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
+    parent.removeChild(mark);
+  });
 }
