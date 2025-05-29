@@ -1,20 +1,20 @@
 {
   "students": [
     {
-      "name": "Jiani Zhao",
-      "degree": "Undergraduate",
+      "name": "Karl Grantham",
+      "degree": "PhD",
       "image": "",
-      "linkedin": "https://www.linkedin.com/in/jiani-zhao-b31286354/",
+      "linkedin": "",
       "status": "Current",
-      "description": "2025"
+      "description": "2023.09 - "
     },
     {
       "name": "Aws Al Jumaily",
-      "degree": "Masters",
+      "degree": "PhD",
       "image": "./img/team/Aws_Al_Jumaily.png",
       "linkedin": "https://www.linkedin.com/in/aws-al-jumaily-0593621a5/?originalSubdomain=ca",
       "status": "Current",
-      "description": "2025"
+      "description": "2025.05 - "
     },
     {
       "name": "Maysara Al Jumaily",
@@ -22,7 +22,15 @@
       "image": "./img/team/Maysara_Al_Jumaily.png",
       "linkedin": "https://www.linkedin.com/in/maysara-al-jumaily/?originalSubdomain=ca",
       "status": "Current",
-      "description": "2025"
+      "description": "2024.09 - "
+    },
+    {
+      "name": "Brendan Park",
+      "degree": "Masters",
+      "image": "./img/team/Brendan_Park.jpg",
+      "linkedin": "https://www.linkedin.com/in/brendan-park/?originalSubdomain=ca",
+      "status": "Current",
+      "description": ""
     },
     {
       "name": "Qiqi Gao",
@@ -30,7 +38,7 @@
       "image": "",
       "linkedin": "https://www.linkedin.com/in/qiqi-gao-767142182/?originalSubdomain=ca",
       "status": "Current",
-      "description": "2025"
+      "description": "2024.09 - "
     },
     {
       "name": "Yiduo Zhang",
@@ -38,38 +46,38 @@
       "image": "",
       "linkedin": "",
       "status": "Current",
-      "description": "2025"
+      "description": "2024.09 - "
     },
     {
-      "name": "Jinjiang Lu",
+      "name": "Brendan Lu",
       "degree": "Masters",
       "image": "",
       "linkedin": "",
       "status": "Current",
-      "description": "2025"
+      "description": "2024.01 - "
     },
     {
       "name": "Marcus Elbert Villena",
       "degree": "Masters",
       "image": "",
       "linkedin": "",
-      "status": "Alumni",
-      "description": ""
+      "status": "Current",
+      "description": "2023.05 - "
     },
     {
       "name": "Daniil Pozdniakov",
       "degree": "Masters",
       "image": "",
       "linkedin": "",
-      "status": "Alumni",
-      "description": ""
+      "status": "Current",
+      "description": "2023.05 - "
     },
     {
       "name": "Andrew Vu",
       "degree": "Masters",
       "image": "",
       "linkedin": "",
-      "status": "Alumni",
+      "status": "Current",
       "description": ""
     },
     {
@@ -77,24 +85,40 @@
       "degree": "Masters",
       "image": "",
       "linkedin": "",
-      "status": "Alumni",
+      "status": "Current",
       "description": ""
+    },
+    {
+      "name": "Tyler McDonald",
+      "degree": "Masters",
+      "image": "./img/team/Tyler_McDonald.jpg",
+      "linkedin": "https://ca.linkedin.com/in/tyler-mcdonald-534504223",
+      "status": "Current",
+      "description": "2025.09 - "
     },
     {
       "name": "Nicholas Aksamit",
       "degree": "Masters",
       "image": "",
       "linkedin": "",
-      "status": "Alumni",
-      "description": "(co-supervised with Dr. Beatrice Ombuki-Berman)"
+      "status": "Current",
+      "description": "2021.09 - (co-supervised with Dr. Beatrice Ombuki-Berman)"
     },
     {
       "name": "Madiha Ahmed",
       "degree": "Masters",
       "image": "",
       "linkedin": "",
-      "status": "Alumni",
-      "description": "(co-supervised with Dr. Ejaz Ahmed)"
+      "status": "Current",
+      "description": "2022.01 - (co-supervised with Dr. Ejaz Ahmed)"
+    },
+    {
+      "name": "Jiani Zhao",
+      "degree": "Undergraduate",
+      "image": "",
+      "linkedin": "https://www.linkedin.com/in/jiani-zhao-b31286354/",
+      "status": "Current",
+      "description": ""
     },
     {
       "name": "Hayley Bennett",
@@ -102,7 +126,7 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": "(co-supervised with Dr. Tony Yan)"
+      "description": "2020.09 - 2023.05 (co-supervised with Dr. Tony Yan)"
     },
     {
       "name": "Muhetaer Mukaidaisi",
@@ -110,7 +134,7 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
+      "description": "2021.01 - 2022.12"
     },
     {
       "name": "Peng Jin",
@@ -118,7 +142,7 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
+      "description": "2021.01 - 2022.12"
     },
     {
       "name": "Cameron Andress",
@@ -126,15 +150,39 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
+      "description": "2020.05 - 2022.10"
     },
     {
-      "name": "Brendan Park",
+      "name": "Danny Salem",
       "degree": "Masters",
       "image": "",
-      "linkedin": "https://www.linkedin.com/in/brendan-park/?originalSubdomain=ca",
-      "status": "Current",
-      "description": "2025"
+      "linkedin": "",
+      "status": "Alumni",
+      "description": "2018.09 - 2019.12"
+    },
+    {
+      "name": "Sanjanaa Naveen Babu",
+      "degree": "Undergraduate",
+      "image": "",
+      "linkedin": "",
+      "status": "Alumni",
+      "description": "2024.05 - 2024.08"
+    },
+    {
+      "name": "Bilal Bilal",
+      "degree": "Undergraduate",
+      "image": "",
+      "linkedin": "",
+      "status": "Alumni",
+      "description": "2024.01 - 2024.04"
+    },
+    {
+      "name": "Ahmed Thabit",
+      "degree": "Undergraduate",
+      "image": "",
+      "linkedin": "",
+      "status": "Alumni",
+      "description": "2024.09 - 2025.04"
     },
     {
       "name": "Aurora Zuo",
@@ -142,7 +190,15 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
+      "description": "2022.09 - 2023.04"
+    },
+    {
+      "name": "Thomas Liang",
+      "degree": "Undergraduate",
+      "image": "",
+      "linkedin": "",
+      "status": "Alumni",
+      "description": "2020.05 - 2020.12"
     },
     {
       "name": "Liam Coorssen",
@@ -158,15 +214,7 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
-    },
-    {
-      "name": "Tyler McDonald",
-      "degree": "Undergraduate",
-      "image": "",
-      "linkedin": "",
-      "status": "Alumni",
-      "description": ""
+      "description": "2023.01 - 2024.12"
     },
     {
       "name": "Kylee Schram",
@@ -174,7 +222,15 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
+      "description": "2022.05 - 2022.12"
+    },
+    {
+      "name": "Mo Ahsan Ahmad",
+      "degree": "Masters",
+      "image": "",
+      "linkedin": "",
+      "status": "Alumni",
+      "description": "2023.09 - 2024.12 (co-supervised with Dr.Ahmed)"
     },
     {
       "name": "Hang Li",
@@ -182,7 +238,7 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
+      "description": "2022.04 - 2022.08"
     },
     {
       "name": "Victoria Danh",
@@ -190,7 +246,7 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
+      "description": "2021.01 - 2021.04"
     },
     {
       "name": "Sheriff Abouchekeir",
@@ -198,7 +254,7 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
+      "description": "2020.09 - 2021.04"
     },
     {
       "name": "Bradyn Willet-Smithers",
@@ -206,7 +262,7 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
+      "description": "2021.01 - 2021.04"
     },
     {
       "name": "Joel Sauve",
@@ -214,7 +270,7 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
+      "description": "2020.05 - 2021.04"
     },
     {
       "name": "Rajko Colakovic",
@@ -222,15 +278,7 @@
       "image": "",
       "linkedin": "",
       "status": "Alumni",
-      "description": ""
-    },
-    {
-      "name": "Karl Grantham",
-      "degree": "Masters",
-      "image": "",
-      "linkedin": "",
-      "status": "Alumni",
-      "description": ""
+      "description": "2020.01 - 2020.12"
     }
   ]
 }

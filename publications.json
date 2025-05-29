@@ -19,6 +19,15 @@
       "link": "https://aclanthology.org/2025.coling-main.471/"
     },
     {
+      "year": 2025,
+      "type": "Conference",
+      "title": "Aligning language models using multi-objective deep reinforcement learning",
+      "authors": "Y. Zhang, X. Zhu, Y. Li",
+      "venue": "Canadian AI Conference",
+      "date": "May 2025",
+      "link": "#"
+    },
+    {
       "year": 2024,
       "type": "Journal",
       "title": "'Several birds with one stone': Exploring the potential of AI methods for multi-target drug design",
@@ -88,6 +97,15 @@
       "title": "Exploring multi-objective deep reinforcement learning methods for drug design",
       "venue": "International Conferences on Computational Biology and Bioinformatics (CIBCB)",
       "date": "Aug. 2022",
+      "link": "https://doi.org/10.1109/CIBCB55180.2022.9863052"
+    },
+    {
+      "year": 2022,
+      "type": "Conference",
+      "authors": "X. Zhang, Y. Li, X. Peng, X. Qiao, H. Zhang, W. Lu",
+      "title": "Correlation encoder-decoder model for text generation",
+      "venue": "International Joint Conference on Neural Networks (IJCNN)",
+      "date": "July 2022",
       "link": "https://doi.org/10.1109/CIBCB55180.2022.9863052"
     },
     {
