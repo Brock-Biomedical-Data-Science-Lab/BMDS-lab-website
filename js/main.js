@@ -227,7 +227,7 @@ function loadStudentsPage() {
           if (searchMatch && keyword.length > 0) {
             highlightElementText(nameElement, keyword, true);
           } else {
-            removeAllHighlights(pub);
+            removeAllHighlights(nameElement);
           }
         });
       }
