@@ -279,7 +279,17 @@ function loadPublicationsPage() {
           item.setAttribute("data-year", pub.year);
           item.setAttribute("data-type", pub.type);
 
-          item.innerHTML = `<p>${pub.authors},<br><a href="${pub.link}" target="_blank" class="pub-title">"${pub.title}"</a>, <em>${pub.venue}</em>, ${pub.date}${pub.pages ? ", " + pub.pages : ""}${pub.note ? ", " + pub.note : ""}.</p>`;
+          let titleHTML;
+          if (pub.link) {
+            titleHTML = `<a href="${pub.link}" target="_blank" class="pub-title">"${pub.title}"</a>`;
+          } else {
+            titleHTML = `<span class="pub-title no-link">"${pub.title}"</span>`;
+          }
+
+          item.innerHTML = `<p>${pub.authors},<br>
+            ${titleHTML}, <em>${pub.venue}</em>, ${pub.date}
+            ${pub.pages ? ", " + pub.pages : ""}${pub.note ? ", " + pub.note : ""}.
+          </p>`;
 
           group.appendChild(item);
         });
