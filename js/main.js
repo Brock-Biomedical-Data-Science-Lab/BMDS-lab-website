@@ -66,6 +66,14 @@ document.addEventListener("DOMContentLoaded", () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 
+  // Auto display each page's own last modified date
+  const lastUpdatedSpan = document.getElementById("last-updated");
+  if (lastUpdatedSpan) {
+    const updated = new Date(document.lastModified);
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    lastUpdatedSpan.textContent = updated.toLocaleDateString("en-US", options);
+  }
+  
   // Load the initial page on start up
   const page = window.location.pathname.split("/").pop().replace(".html", "") || "index";
   loadPage(page);
