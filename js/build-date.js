@@ -1,2 +1,2 @@
-// Auto-generated on October 23, 2025
-window.siteUpdateDate = 'October 23, 2025';
+// Auto-generated on June 26, 2026
+window.siteUpdateDate = 'June 26, 2026';

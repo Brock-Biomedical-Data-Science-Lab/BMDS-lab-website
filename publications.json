@@ -1,12 +1,31 @@
 {
   "publications": [
     {
+      "year": 2026,
+      "type": "Journal",
+      "title": "Comprehensive evaluation of artificial intelligence-empowered approaches for protein–aptamer complex prediction",
+      "authors": "J. Zhao, K. Tram, H. Yan, and Y. Li",
+      "venue": "Briefings in Bioinformatics",
+      "date": "vol. 27, no. 3, bbag206, 2026",
+      "link": "https://academic.oup.com/bib/article/27/3/bbag206/8666819"
+    },
+    {
       "year": 2025,
       "type": "Conference",
+      "title": "Keypoint-Guided Ophidian Transformation for String-Shaped Data Augmentation",
+      "authors": "T. Kwok, B. Park, K. Yagi, A. Yagi, C. Yang, M. Liao, and Y. Li",
+      "venue": "2025 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)",
+      "date": "Tainan, Taiwan, 2025, pp. 1-10",
+      "link": "https://doi.org/10.1109/CIBCB66090.2025.11177064"
+    },
+    {
+      "year": 2025,
+      "type": "Journal",
       "title": "Exploration of chaos game representation and integrative deep learning approaches for whole-genome sequencing-based grapevine genetic testing",
       "authors": "A. Vu, B. Park, Y. Li, and P. Liang",
-      "venue": "Great Lakes Bioinformatics Conference (GLBIO)",
-      "date": "May 2025, accepted"
+      "venue": "Bioinformatics Advances",
+      "date": "vol. 5, issue 1, vbaf193, 2025",
+      "link": "https://doi.org/10.1093/bioadv/vbaf193"
     },
     {
       "year": 2025,
