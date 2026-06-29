@@ -252,7 +252,7 @@ function loadPublicationsPage() {
   if (!container) return;
   container.innerHTML = "";
 
-  const filterButtons = document.querySelectorAll(".filter-button");
+  const filterButtons = document.querySelectorAll(".filter-button[data-filter]");
   const searchInput = document.getElementById("searchBox");
   const clearBtn = document.getElementById("clearSearch");
 
@@ -333,8 +333,8 @@ function loadPublicationsPage() {
         });
       }
 
-      setupFilterButtons(filterButtons, () => {
-        currentFilter = document.querySelector(".filter-button.active")?.getAttribute("data-filter") || "All";
+      setupPublicationFilterButtons(filterButtons, (selectedFilter) => {
+        currentFilter = selectedFilter;
         filterPublications();
       });
 
@@ -369,8 +369,42 @@ function setupFilterButtons(buttons, onFilter) {
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
       buttons.forEach(b => b.classList.remove("active"));
+
+      const previousToggle = document.getElementById("previousYearsToggle");
+      if (previousToggle) {
+        previousToggle.classList.remove("active");
+      }
+
       btn.classList.add("active");
+
+      if (btn.closest(".previous-years-menu") && previousToggle) {
+        previousToggle.classList.add("active");
+      }
+
       onFilter();
+    });
+  });
+}
+
+function setupPublicationFilterButtons(buttons, onFilter) {
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const selectedFilter = btn.getAttribute("data-filter");
+
+      buttons.forEach(b => b.classList.remove("active"));
+
+      const previousToggle = document.getElementById("previousYearsToggle");
+      if (previousToggle) {
+        previousToggle.classList.remove("active");
+      }
+
+      btn.classList.add("active");
+
+      if (btn.closest(".previous-years-menu") && previousToggle) {
+        previousToggle.classList.add("active");
+      }
+
+      onFilter(selectedFilter);
     });
   });
 }

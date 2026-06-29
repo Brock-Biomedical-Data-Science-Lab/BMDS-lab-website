@@ -589,6 +589,48 @@ body {
   border-color: #4055b8;
 }
 
+.previous-years-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.previous-years-menu {
+  display: none;
+  position: absolute;
+  top: calc(100%);
+  left: 0;
+  z-index: 999;
+  min-width: 160px;
+  padding: 8px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.previous-years-dropdown:hover .previous-years-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.previous-years-menu .filter-button {
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.previous-toggle i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.previous-years-dropdown:hover .previous-toggle i {
+  transform: rotate(180deg);
+}
+
 .search-box-wrapper {
   width: 100%;
   max-width: 1000px;

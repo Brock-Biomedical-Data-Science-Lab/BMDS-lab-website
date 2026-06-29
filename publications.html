@@ -88,8 +88,15 @@
               <button data-filter="2023" class="filter-button">2023</button>
               <button data-filter="2022" class="filter-button">2022</button>
               <button data-filter="2021" class="filter-button">2021</button>
-              <button data-filter="2020" class="filter-button">2020</button>
-              <button data-filter="Others" class="filter-button">Others</button>
+
+              <div class="previous-years-dropdown">
+                <button type="button" class="filter-button previous-toggle" id="previousYearsToggle">
+                  Previous Years <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="previous-years-menu" id="previousYearsMenu">
+                  <button data-filter="2020" class="filter-button previous-year-button">2020</button>
+                </div>
+              </div>
             </div>
           </div>
 
