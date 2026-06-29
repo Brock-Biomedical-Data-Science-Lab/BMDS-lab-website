@@ -552,11 +552,12 @@ body {
 
 /* filtter */
 .filters {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   /* left align */
   margin-top: 30px;
+  max-width: 100%;
 }
 
 .button-group {
@@ -594,14 +595,20 @@ body {
   display: inline-block;
 }
 
+.previous-toggle {
+  width: 100%;
+}
+
 .previous-years-menu {
   display: none;
   position: absolute;
-  top: calc(100%);
+  top: 100%;
   left: 0;
   z-index: 999;
-  min-width: 160px;
-  padding: 8px;
+
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 0;
 
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(4px);
@@ -617,9 +624,21 @@ body {
 }
 
 .previous-years-menu .filter-button {
-  width: 100%;
-  text-align: left;
+  width: 70px;
+  align-self: center;
+  box-sizing: border-box;
+  text-align: center;
   white-space: nowrap;
+  padding: 8px 16px;
+
+  border: none;
+  box-shadow: none;
+}
+
+.previous-years-menu .filter-button:hover,
+.previous-years-menu .filter-button.active {
+  border: none;
+  box-shadow: none;
 }
 
 .previous-toggle i {
@@ -633,7 +652,7 @@ body {
 
 .search-box-wrapper {
   width: 100%;
-  max-width: 1000px;
+  max-width: none;
   margin-top: 13px;
   /* space between search & filter */
 }
@@ -641,11 +660,12 @@ body {
 .search-box-container {
   position: relative;
   width: 100%;
-  max-width: 1000px;
+  max-width: none;
 }
 
 .search-box {
   width: 100%;
+  box-sizing: border-box;
   padding: 10px 36px 10px 36px;
   font-size: 15px;
   border: 1px solid #ccc;
